@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <!-- 百度的接口不允许外界去调用它，设置页面来路为空，发送给百度接口的请求就不带url，就可以调用百度的接口 -->
+    <title>hungoou Radio</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_448304_47new50n1nabgldi.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <section id="page-music">
+        <main class="layout">
+            <div class="aside">
+                <figure></figure>
+                <!-- 没有用img src考虑到适配的问题，如果用src要设置宽高。但实际宽高都是变来变去的，图片的大小没有办法固定。
+                如果我们不用img 而是用背景图片，那我们背景图片就可以等比的缩放了，直接放进去图片展示用cover，不用考虑图片多大 -->
+                <div class="actions">
+                    <span class="btn-collect iconfont icon-heart"></span>
+                    <span class="btn-play iconfont icon-pause"></span>
+                    <span class="btn-next iconfont icon-next"></span>
+                    <!--可以用 inline-block float flex flex为1 -->
+                </div>
+            </div>
+            <div class="detail">
+                <span class="tag">90后a</span>
+                <h1>its a new day</h1>
+                <ul class="icons">
+                    <li><span class="iconfont icon-earphone"></span>3333</li>
+                    <li><span class="iconfont icon-heart"></span>128</li>
+                    <li><span class="iconfont icon-like"></span>20</li>
+                </ul>
+                <div class="area-bar">
+                    <div class="bar">
+                        <div class="bar-progress"></div>
+                    </div>
+                    <div class="current-time">1:02</div>
+                </div>
+                <!-- 两种方式：一种flex，时间宽度固定，进度条宽度撑满，二是浮动，时间浮动，进度条设置marginright -->
+                <div class="author">周杰伦</div>
+                <div class="lyric">
+                    <p>hhhhhhh</p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="layout">
+                <span class="iconfont icon-left"></span>
+                <span class="iconfont icon-right"></span>
+                <div class="box ">
+                        <ul>
+                            <li>
+                                <div class="cover" style="background-image: url(http://qimg.hxnews.com/2017/1213/1513124282651.jpg)"></div>
+                                <h3>漫步春天</h3>
+                            </li>
+                            <li>
+                                <div class="cover" style="background-image: url(http://qimg.hxnews.com/2017/1213/1513124282651.jpg)"></div>
+                                <h3>漫步春天</h3>
+                            </li>
+                            <li>
+                                <div class="cover" style="background-image: url(http://qimg.hxnews.com/2017/1213/1513124282651.jpg)"></div>
+                                <h3>漫步春天</h3>
+                            </li>
+        
+                            <li>
+                                <div class="cover" style="background-image: url(http://qimg.hxnews.com/2017/1213/1513124282651.jpg)"></div>
+                                <h3>漫步春天</h3>
+                            </li>
+                            <li>
+                                <div class="cover" style="background-image: url(http://qimg.hxnews.com/2017/1213/1513124282651.jpg)"></div>
+                                <h3>漫步春天</h3>
+                            </li>
+        
+                        </ul>
+                    </div>
+            </div>
+
+        </footer>
+    </section>
+    <section id="page-cover"></section>
+    <div class="bg"></div> 
+    <!-- 背景图片有模糊的效果，但是模糊的效果加在一个标签上，所以加了一个div标签 -->
+    <script src="js/index.js"></script>
+</body>
+</html>
